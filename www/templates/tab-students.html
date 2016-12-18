@@ -1,0 +1,21 @@
+<ion-view view-title="Students">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="student in students"  style="padding: 0px"  class="item-text-wrap">
+        <div class="row" style="padding: 0px" >
+          <div class="col col-90">
+            <ion-item href="#/tab/students/{{student._id}}" style="border-color: transparent">
+              <div class="col">
+                <h2>{{ student.name }}</h2>
+              </div>
+            </ion-item>
+
+          </div>
+          <div class="col col-10">
+            <button class="button button-clear button-small button-assertive" style="padding-top: 1em" ng-click="DeleteStudent(student._id)"><i class="icon ion-close-round"></i></button>
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
