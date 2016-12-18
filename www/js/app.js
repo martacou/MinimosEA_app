@@ -38,6 +38,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
   .state('tab.subjects', {
     url: '/subjects',
+    cache: false,
     views: {
       'tab-subjects': {
         templateUrl: 'templates/tab-subjects.html',
@@ -47,6 +48,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   })
     .state('tab.subject-detail', {
       url: '/subjects/:subjectId',
+      cache: false,
       views: {
         'tab-subjects': {
           templateUrl: 'templates/subject-detail.html',
@@ -56,6 +58,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
   .state('tab.students', {
       url: '/students',
+    cache: false,
       views: {
         'tab-students': {
           templateUrl: 'templates/tab-students.html',
@@ -65,6 +68,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('tab.student-detail', {
       url: '/students/:studentId',
+      cache: false,
       views: {
         'tab-students': {
           templateUrl: 'templates/student-detail.html',
@@ -74,6 +78,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
     .state('tab.add', {
       url: '/add',
+      cache: false,
       views: {
         'tab-add': {
           templateUrl: 'templates/tab-add.html',
@@ -83,6 +88,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     })
   .state('tab.search', {
     url: '/search',
+    cache: false,
     views: {
       'tab-search': {
         templateUrl: 'templates/tab-search.html',
